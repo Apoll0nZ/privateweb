@@ -1,154 +1,95 @@
-@charset "UTF-8";
 html {
     font-size: 100%;
+    background-color: aliceblue;
 }
-
-main {
-    display: flex;
-  flex-direction: column; /* 子要素を縦に並べる */
-  align-items: center; /* 子要素を横方向の中央に揃える */
+main{
+    margin-bottom: 8rem;
 }
-
+.container{
+    max-width: 1000px; /* コンテンツの最大幅を1000pxに */
+    margin: 0 auto; 
+}
 .header h1{
-    background-color: #2B383F;
-    padding: 0.5rem 1rem;
-    color: #FFFFFF;
+    padding: 0.5rem;
     font-family: sans-serif;
-    margin-left: 20rem; 
+    margin-left: 2rem;
 }
-.header {
-    display: flex; /* Flexboxを有効にして子要素を横並びにする */
-    justify-content: space-between; /* 子要素（h1とnav）を両端に配置する */
-    align-items: center; /* h1とnavを上下方向の中央に揃える */
-    background-color: #FFFFFF;
-}
-
-/* nav内のリストを横並びにしたい場合は、ulにもflexboxを設定します */
-.nav-list {
-    display: flex;
-    list-style: none; /* リストの点や数字を消す */
-    padding: 0;
-    margin: 0;
-}
-
-.nav-list li {
-    margin-left: 20px; /* リストアイテム間の余白 */
-}
-
-.nav-list a {
-    text-decoration: none; /* 下線を消す */
-    color: #000; /* テキストの色を黒にする */
+.mainimage-container {
+    max-width: 90%;  /* 画面幅の90%に制限 */
+  margin: 0 auto;  /* 左右中央寄せ */
+  margin-bottom: 3rem;
 }
 .mainimage {
-    display:flex;
-    margin: 0 auto; /* 中央揃え */
-    max-width: 100%; /* 横幅を画面いっぱいに */
-  height: 700px; /* 縦幅を300pxに設定 */
+    width: 100%;         /* 親要素の幅に合わせる */
+    height: auto;        /* アスペクト比を維持 */
+    display: block;      /* 中央寄せ用 */
 }
-.about {
-  width: 90%; /* 必要に応じて幅を設定 */
-  max-width: 1000px; /* 最大幅を設定してPC表示で広がりすぎないようにする */
-  margin: 0 auto; /* 左右の余白を自動調整して中央に寄せる */
+.index {
+    width: 90%; /* 必要に応じて幅を設定 */
+    max-width: 1000px; /* 最大幅を設定してPC表示で広がりすぎないようにする */
+    margin: 0 auto; /* 左右の余白を自動調整して中央に寄せる */
     display: flex;
   flex-direction: column; /* 子要素（h2とdiv）を縦に並べる */
   align-items: center; /* 子要素を横方向の中央に揃える */
-  margin-bottom: 10rem; /* 下側の余白だけを30pxに上書き */
-  
+  margin-bottom: 3rem;
+    background-color: #FFFFFF;
 }
-.about h2 {
-    font-size: 2.5rem; /* 見出しのフォントサイズを設定 */
-    margin-bottom: 20px; /* 見出しとコンテンツの間に余白を追加 */
-    text-align: center; /* 見出しを中央揃え */
-    border-bottom: 2px solid #000;
+.index-content {
+    width: 100%; /* 必要に応じて幅を設定 */
+    max-width: 600px; /* 最大幅を設定してPC表示で広がりすぎないようにする */
+    margin: 0 auto; /* 左右の余白を自動調整して中央に寄せる */
 }
-/* 画像とテキストを囲む親div */
-.about-content {
-    display: flex; /* これが画像とテキストのdivを横並びにする */
-    align-items: center; /* 垂直方向の中央に揃える */
-    gap: 30px; /* 画像とテキストの間に余白を作る */
+.index ol {
+    margin-bottom: 3rem;
 }
-.about-content img {
-    width: 200px; /* 横幅を200pxに指定 */
-    height: 200px; /* 縦幅も200pxに指定して正方形にする */
-    object-fit: cover; /* 画像がはみ出さないように、中央で切り取る */
-    border-radius: 50%; /* 角を50%丸めて円形にする */
+.index li {
+    margin-bottom: 0.5rem; /* リストアイテム間の余白 */
 }
-/* テキストを囲むdiv */
-.about-text {
-    display: flex;
-    flex-direction: column; /* 子要素（h3とp）を縦に並べる */
-}
-.image-container {
-  width: 100%; /* 親要素の幅を100%に設定 */
-}
-
-.image-container img {
-  width: 100%; /* 画像の幅を親要素の幅に合わせる */
-  height: auto; /* 高さは自動調整 */
-  margin-bottom: 10rem;
-}
-.header nav {
-    margin-right: 8rem; 
-}
-.nav-list{
-    display: flex;
-    gap: 2.5rem;
-    font-size: 1rem;
-    list-style: none;
-}
-.Bicycle {
+.detail{
+    width: 90%; /* 必要に応じて幅を設定 */
+    max-width: 1000px; /* 最大幅を設定してPC表示で広がりすぎないようにする */
     margin: 0 auto; /* 左右の余白を自動調整して中央に寄せる */
     display: flex;
-    max-width: 60%; /* 必要に応じて幅を設定 */
-    flex-direction: column; /* 子要素（h2とul）を縦に並べる */
-    align-items: center; /* 子要素を横方向の中央に揃える */
-    margin-bottom: 10rem; /* 下側の余白だけを30pxに上書き */
+  flex-direction: column; /* 子要素（h2とdiv）を縦に並べる */
+  align-items: center; /* 子要素を横方向の中央に揃える */
 }
-.Bicycle h2 {
-    font-size: 2.5rem; /* 見出しのフォントサイズを設定 */
-    margin-bottom: 20px; /* 見出しとコンテンツの間に余白を追加 */
-    text-align: center; /* 見出しを中央揃え */
-    border-bottom: 2px solid #000;
+.detail-container {
+    width: 100%; /* 必要に応じて幅を設定 */
+    max-width: 600px; /* 最大幅を設定してPC表示で広がりすぎないようにする */
+    margin: 0 auto; /* 左右の余白を自動調整して中央に寄せる */
 }
-.Bicycle ul{
-    display: flex;
-    justify-content: center; 
-    text-align: center; /* 見出しを中央揃え */
-    list-style: none; 
-    gap: 1rem;
+.detail-content {
+    display: flex;        /* 横並び */
+    gap: 2rem;            /* 画像とテキストの間に余白 */
+    align-content: flex-end;
 }
-.Bicycle ul li img {
-    width: 100%; /* 親要素のliの幅いっぱいまで広げる */
+
+.detail-content img {
+    flex: 1;  
+    max-width: 50%;      /* 固定幅（必要に応じて調整） */
     height: auto;
 }
-@media (max-width: 600px) {
-  /* Aboutセクション */
-  .about-content {
-    flex-direction: column; /* 横並び → 縦並び */
-    text-align: center; /* テキスト中央寄せ */
-  }
-
-  .about-text {
-    align-items: center; /* テキストを中央揃え */
-  }
-
-  /* Bicycleセクション */
-  .Bicycle ul {
-    flex-direction: column; /* 横並び → 縦並び */
-    gap: 2rem; /* 縦積み用の余白 */
-    width: 100%; /* 幅を親に合わせる */
-    padding: 0;
-  }
-  .Bicycle ul li img {
-    width: 100%; /* モバイルは幅いっぱい */
-    max-width: 300px; /* 画像が大きすぎないよう制限 */
-    margin: 0 auto; /* 中央揃え */
-    display: block;
-  }
+.detailsub {
+    flex: 1;              /* 残りの幅を使う */
 }
-
-footer {
-    padding: 1rem 0; 
-    text-align: center; 
+.fotter{
+        width: 90%; /* 必要に応じて幅を設定 */
+    max-width: 1000px; /* 最大幅を設定してPC表示で広がりすぎないようにする */
+    margin: 0 auto; /* 左右の余白を自動調整して中央に寄せる */
+    display: flex;
 }
-
+.footer p{
+    font-size: 0.8rem;
+    width: 100%; /* 必要に応じて幅を設定 */
+    max-width: 600px; /* 最大幅を設定してPC表示で広がりすぎないようにする */
+    margin: 0 auto; /* 左右の余白を自動調整して中央に寄せる */
+}
+@media (max-width: 1024px) {
+    .detail-content {
+        flex-direction: column; /* 縦並びに変更 */
+        align-items: center;    /* 中央揃え */
+    }
+    .detail-content img, .detailsub {
+        max-width: 100%;        /* 幅を100%に */
+    }
+}
