@@ -1,24 +1,24 @@
 <!DOCTYPE html>
-<html lang="jp">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>コードジャンプ2</title>
+    <title>コードジャンプ3</title>
 </head>
 <body>
     <div class="container">
-    <header class="header">
-        <h1>PothoBook</h1>
+    <header id="header">
+        <h1 class="site-title">PothoBook</h1>
     </header>
     <main>
-        <div class="mainimage-container">
+        <div class="mainvisual ">
             <img class="mainimage" src="./images/mainvisual.jpg" alt="メイン画像">
         </div>
-        <section class="index">
-            <div class="index-content">
-                <h2>INDEX</h2>
-            <ol>
+        <section class="inner index">
+            <div class="inner index-content">
+                <h2 class="section-title">INDEX</h2>
+            <ol class="index-ol">
                 <li>タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</li>
                 <li>タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</li>
                 <li>タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</li>
@@ -27,24 +27,27 @@
             </ol>
             </div>
         </section>
-        <section class="detail">
-            <div class="detail-container">
-                <h2 class="detailtitle">Detail</h2>
-            <div class="detail-content">
-                <img src="./images/detail.jpg" alt="">
-                <div class="detailsub">
-                    <h3 class="detailsubtitle">タイトルタイトルタイトル</h3>
+        <ul class="gallery inner">
+            <li><img src="./images/photo1.jpg" alt="フォト1"></li>
+            <li><img src="./images/photo2.jpg" alt="フォト"></li>
+            <li><img src="./images/photo3.jpg" alt="フォト"></li>
+            <li><img src="./images/photo4.jpg" alt="フォト"></li>
+        </ul>
+        <section class="detail inner">
+            <h2 class="detailtitle">Detail</h2>
+            <div class="detail-text">
                     <dl>
                         <dt>著者 </dt>      <dd>タイトルタイトルタイトル</dd>
                         <dt>出版社 </dt>    <dd>タイトルタイトルタイトル</dd>
                         <dt>発行年 </dt>    <dd>タイトルタイトルタイトル</dd>
                     </dl>
-                    <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                    <a href="">オンラインストアで見る</a>
-                </div>
+                    <div>
+                        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                        <a href="">オンラインストアで見る</a>
+                    </div>
+                    
             </div>
-            </div>
-            
         </section>
     </main>
     <footer class="footer">
